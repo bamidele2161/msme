@@ -24,7 +24,7 @@ const KogiMSMEConference = () => {
         </div>
       </section>
 
-      <div className="relative bg-gradient-to-r from-secColor-Lighter to-secColor text-white py-16 justify-center items-center w-full border flex px-28">
+      <div className="relative bg-gradient-to-r from-secColor-Lighter to-secColor text-white py-16 justify-center items-center w-full border flex flex-col gap-6 md:flex-row px-6 md:px-28">
         <section className="w-full">
           <img
             src={image}
