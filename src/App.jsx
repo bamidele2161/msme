@@ -3,6 +3,11 @@ import Footer from "./components/Footer";
 import WhyAttend from "./components/WhyAttend";
 import Header from "./components/Header";
 import image from "./assets/banner.jpg";
+import image1 from "./assets/per.jpg";
+import image2 from "./assets/per2.jpg";
+import image3 from "./assets/per3.jpg";
+import image4 from "./assets/per4.jpg";
+import image5 from "./assets/per5.jpg";
 const KogiMSMEConference = () => {
   return (
     <div className="bg-gray-50 text-gray-900 min-h-screen">
@@ -38,11 +43,68 @@ const KogiMSMEConference = () => {
             Don't miss the opportunity to empower your business and network with
             industry leaders. Join us in shaping a prosperous future!
           </p>
-          <button className="bg-pryColor hover:bg-[#2C3E50] text-white py-3 px-6 rounded-lg shadow-lg font-semibold text-sm md:text-lg">
+          <a
+            className="bg-pryColor hover:bg-[#2C3E50] text-white py-3 px-6 rounded-lg shadow-lg font-semibold text-sm md:text-lg"
+            href="https://kogikeda.ng/events/form.php"
+          >
             Register Now
-          </button>
+          </a>
         </section>
       </div>
+
+      {/* Image Gallery Section */}
+      <section className="py-16">
+        <div className="container mx-auto text-center px-6 md:px-20">
+          {/* Section Title */}
+          <h2 className="text-3xl md:text-4xl font-bold text-pryColor mb-8">
+            Event Gallery
+          </h2>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            {[
+              {
+                src: image1,
+                alt: "Event Image 1",
+                title: "His Excellency, Alh Yahaya Bello",
+              },
+              {
+                src: image2,
+                alt: "Event Image 2",
+                title:
+                  "Asiwaju Idris Asiru - Hon. Com. of Finance, Budget & economic Planning",
+              },
+              {
+                src: image3,
+                alt: "Event Image 3",
+                title: "KOGI MSME",
+              },
+              {
+                src: image4,
+                alt: "Event Image 4",
+                title: "Hon. Muhammed Muktar Shuaibu",
+              },
+              {
+                src: image5,
+                alt: "Event Image 5",
+                title: "MD/CEO, Kogi Enterprise Development Agency (KEDA)",
+              },
+            ].map((item, index) => (
+              <div key={index} className="rounded-lg overflow-hidden shadow-md">
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
+                />
+                <div className="py-2">
+                  <p className="text-sm font-medium text-gray-700">
+                    {item.title}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <main className="container mx-auto px-4 py-12">
         <WhyAttend />
@@ -59,9 +121,12 @@ const KogiMSMEConference = () => {
               lasting impacts in your community.
             </p>
 
-            <button className="bg-pryColor hover:bg-secColor-Light text-white py-3 px-10 rounded-lg  shadow-lg text-lg font-semibold transition-transform transform hover:scale-105">
+            <a
+              className="bg-pryColor hover:bg-secColor-Light text-white py-3 px-10 rounded-lg  shadow-lg text-lg font-semibold transition-transform transform hover:scale-105"
+              href="https://kogikeda.ng/events/form.php"
+            >
               Register Now
-            </button>
+            </a>
           </div>
         </section>
 

@@ -15,7 +15,10 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="#register" className="hover:text-[#8E44AD]">
+              <a
+                href="https://kogikeda.ng/events/form.php"
+                className="hover:text-[#8E44AD]"
+              >
                 Register
               </a>
             </li>
