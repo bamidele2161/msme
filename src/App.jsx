@@ -9,11 +9,11 @@ import image3 from "./assets/per3.jpg";
 import image4 from "./assets/per4.jpg";
 import image5 from "./assets/per5.jpg";
 import gov from "./assets/gov.jpg";
+import video from "./assets/talent.mp4";
 const KogiMSMEConference = () => {
   return (
     <div className="bg-gray-50 text-gray-900 min-h-screen">
       <Header />
-
       <section id="home" className="py-16 bg-[#FBF7FB] text-center">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-[#352F36]">
@@ -29,7 +29,6 @@ const KogiMSMEConference = () => {
           </p>
         </div>
       </section>
-
       <div className="relative bg-gradient-to-r from-secColor-Lighter to-secColor text-white py-16 justify-center items-center w-full border flex flex-col gap-6 md:flex-row px-6 md:px-28">
         <section className="w-full">
           <img
@@ -53,10 +52,8 @@ const KogiMSMEConference = () => {
         </section>
       </div>
 
-      {/* Image Gallery Section */}
       <section className="py-16">
         <div className="container mx-auto text-center px-6 md:px-20">
-          {/* Section Title */}
           <h2 className="text-3xl md:text-4xl font-bold text-pryColor mb-8">
             Event Gallery
           </h2>
@@ -106,13 +103,6 @@ const KogiMSMEConference = () => {
 
           <div className="flex flex-wrap justify-center gap-6 mt-10">
             {[
-              // {
-              //   src: image1,
-              //   alt: "Event Image 1",
-              //   position: "Special Guest",
-              //   title:
-              //     "Father of the day, Former Governor, His Excellency, Alh Yahaya Bello",
-              // },
               {
                 src: image2,
                 alt: "Event Image 2",
@@ -156,7 +146,58 @@ const KogiMSMEConference = () => {
           </div>
         </div>
       </section>
+      <section className="py-16 bg-pryColor-Light">
+        <div className="container mx-auto text-center px-6 md:px-20">
+          <h2 className="text-3xl md:text-4xl font-bold text-pryColor mb-4">
+            Launching Kogi MSME Hub Initiative
+          </h2>
+          <p className="text-lg text-pryColor-Light mb-8">
+            Empowering individuals with unparalleled opportunities through:
+          </p>
 
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div className="bg-secColor-Lighter py-6 px-4 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-pryColor mb-2">
+                🎯 Talent Haunt
+              </h3>
+              <p className="text-gray-700">
+                Unveiling hidden talents within communities and fostering
+                creativity.
+              </p>
+            </div>
+            <div className="bg-secColor-Lighter py-6 px-4 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-pryColor mb-2">
+                💡 Talent Incubation
+              </h3>
+              <p className="text-gray-700">
+                Nurturing talents through training and mentorship for
+                sustainable growth.
+              </p>
+            </div>
+            <div className="bg-secColor-Lighter py-6 px-4 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-pryColor mb-2">
+                🌍 Talent Exposure
+              </h3>
+              <p className="text-gray-700">
+                Connecting talents to global opportunities and markets.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex justify-center h-[500px]">
+            <div className="relative w-full max-w-4xl aspect-w-16 aspect-h-9 shadow-lg rounded-lg overflow-hidden">
+              <iframe
+                src={video}
+                title="Event Highlights"
+                className="absolute inset-0 w-full h-full"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
       <main className="container mx-auto px-4 py-12">
         <WhyAttend />
 
@@ -190,7 +231,6 @@ const KogiMSMEConference = () => {
           </p>
         </section>
       </main>
-
       <Footer />
     </div>
   );
