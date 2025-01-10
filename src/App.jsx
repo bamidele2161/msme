@@ -8,6 +8,7 @@ import image2 from "./assets/per2.jpg";
 import image3 from "./assets/per3.jpg";
 import image4 from "./assets/per4.jpg";
 import image5 from "./assets/per5.jpg";
+import gov from "./assets/gov.jpg";
 const KogiMSMEConference = () => {
   return (
     <div className="bg-gray-50 text-gray-900 min-h-screen">
@@ -59,45 +60,95 @@ const KogiMSMEConference = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-pryColor mb-8">
             Event Gallery
           </h2>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="flex flex-wrap justify-center gap-6">
             {[
               {
-                src: image1,
+                src: gov,
                 alt: "Event Image 1",
-                title: "His Excellency, Alh Yahaya Bello",
-              },
-              {
-                src: image2,
-                alt: "Event Image 2",
-                title:
-                  "Asiwaju Idris Asiru - Hon. Com. of Finance, Budget & economic Planning",
+                position: "Executive Governor, Kogi State",
+                title: "His Excellency, Alhahi Ahmed Usman Ododo",
               },
               {
                 src: image3,
                 alt: "Event Image 3",
+                position: "",
                 title: "KOGI MSME",
               },
               {
+                src: image1,
+                alt: "Event Image 2",
+                position: "Father of the day",
+                title: "Former Governor - His Excellency, Alhaji Yahaya Bello",
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className={`"rounded-lg overflow-hidden shadow-md" ${
+                  item.src === image1 && "w-60 border"
+                }`}
+              >
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  className="w-full h-60 object-cover transition-transform duration-300 hover:scale-105"
+                />
+                <div className="py-2 flex flex-col gap-4">
+                  <p className="text-sm font-medium text-gray-700">
+                    {item.title}
+                  </p>
+                  <p className="text-xs font-semibold text-gray-700">
+                    {item.position}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-6 mt-10">
+            {[
+              // {
+              //   src: image1,
+              //   alt: "Event Image 1",
+              //   position: "Special Guest",
+              //   title:
+              //     "Father of the day, Former Governor, His Excellency, Alh Yahaya Bello",
+              // },
+              {
+                src: image2,
+                alt: "Event Image 2",
+                position: "Special Guest",
+                title:
+                  "Asiwaju Idris Asiru - Hon. Com. of Finance, Budget & economic Planning",
+              },
+
+              {
                 src: image4,
                 alt: "Event Image 4",
+                position: "Special Guest",
                 title: "Hon. Muhammed Muktar Shuaibu",
               },
               {
                 src: image5,
                 alt: "Event Image 5",
+                position: "Chief Host",
                 title: "MD/CEO, Kogi Enterprise Development Agency (KEDA)",
               },
             ].map((item, index) => (
-              <div key={index} className="rounded-lg overflow-hidden shadow-md">
+              <div
+                key={index}
+                className="rounded-lg overflow-hidden shadow-md w-60"
+              >
                 <img
                   src={item.src}
                   alt={item.alt}
                   className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
                 />
-                <div className="py-2">
+                <div className="py-2 flex flex-col gap-4">
                   <p className="text-sm font-medium text-gray-700">
                     {item.title}
+                  </p>
+                  <p className="text-xs font-semibold text-gray-700">
+                    {item.position}
                   </p>
                 </div>
               </div>
