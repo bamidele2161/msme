@@ -63,7 +63,7 @@ const KogiMSMEConference = () => {
                 src: gov,
                 alt: "Event Image 1",
                 position: "Executive Governor, Kogi State",
-                title: "His Excellency, Alhahi Ahmed Usman Ododo",
+                title: "His Excellency, Alhaji Ahmed Usman Ododo",
               },
               {
                 src: image3,
@@ -236,7 +236,7 @@ const KogiMSMEConference = () => {
         <div className="container mx-auto text-center px-6 md:px-20">
           {/* Section Title */}
           <h2 className="text-3xl md:text-4xl font-bold text-pryColor mb-8">
-            As Powered By
+            Powered By
           </h2>
 
           {/* Images Container */}
