@@ -16,6 +16,14 @@ const Header = () => {
             </li>
             <li>
               <a
+                href="https://www.ecosystem.ng/register"
+                className="hover:text-[#8E44AD]"
+              >
+                CAC Registeration
+              </a>
+            </li>
+            <li>
+              <a
                 href="https://kogikeda.ng/events/form.php"
                 className="hover:text-[#8E44AD]"
               >

@@ -231,6 +231,37 @@ const KogiMSMEConference = () => {
           </p>
         </section>
       </main>
+
+      <section className="py-16">
+        <div className="container mx-auto text-center px-6 md:px-20">
+          {/* Section Title */}
+          <h2 className="text-3xl md:text-4xl font-bold text-pryColor mb-8">
+            As Powered By
+          </h2>
+
+          {/* Images Container */}
+          <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+            {/* Image 1 */}
+            <div className="w-full md:w-1/3 flex justify-center">
+              <img
+                src={"https://kogikeda.ng/events/images/keda.jpg"}
+                alt="Powered By Logo 1"
+                className="h-32 object-contain"
+              />
+            </div>
+
+            {/* Image 2 */}
+            <div className="w-full md:w-1/3 flex justify-center">
+              <img
+                src={"https://kogikeda.ng/events/images/ecosystem.jpg"}
+                alt="Powered By Logo 2"
+                className="h-32 object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
