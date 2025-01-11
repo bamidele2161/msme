@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header className="bg-[#2C3E50] text-white py-6">
       <div className="container mx-auto flex justify-between items-center px-6">
-        <div className="text-2xl md:text-3xl font-semibold">
+        <div className="text-1xl md:text-2xl font-semibold">
           Kogi State MSME & Financial Inclusion Conference 2025🌟
         </div>
         <nav>
@@ -19,7 +19,7 @@ const Header = () => {
                 href="https://www.ecosystem.ng/register"
                 className="hover:text-[#8E44AD]"
               >
-                CAC Registeration
+                KOGI MSME Registeration
               </a>
             </li>
             <li>

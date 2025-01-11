@@ -10,6 +10,7 @@ import image4 from "./assets/per4.jpg";
 import image5 from "./assets/per5.jpg";
 import gov from "./assets/gov.jpg";
 import video from "./assets/talent.mp4";
+import main from "./assets/main.mp4";
 const KogiMSMEConference = () => {
   return (
     <div className="bg-gray-50 text-gray-900 min-h-screen">
@@ -47,7 +48,7 @@ const KogiMSMEConference = () => {
             className="bg-pryColor hover:bg-[#2C3E50] text-white py-3 px-6 rounded-lg shadow-lg font-semibold text-sm md:text-lg"
             href="https://kogikeda.ng/events/form.php"
           >
-            Register Now
+            MSME Conference Registration Here
           </a>
         </section>
       </div>
@@ -80,8 +81,8 @@ const KogiMSMEConference = () => {
             ].map((item, index) => (
               <div
                 key={index}
-                className={`"rounded-lg overflow-hidden shadow-md" ${
-                  item.src === image1 && "w-60 border"
+                className={`rounded-lg overflow-hidden shadow-md ${
+                  item.src === image1 && "w-60"
                 }`}
               >
                 <img
@@ -151,6 +152,19 @@ const KogiMSMEConference = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-pryColor mb-4">
             Launching Kogi MSME Hub Initiative
           </h2>
+          <div className="flex justify-center h-[500px]">
+            <div className="relative w-full max-w-4xl aspect-w-16 aspect-h-9 shadow-lg rounded-lg overflow-hidden">
+              <iframe
+                src={main}
+                title="Event Highlights"
+                className="absolute inset-0 w-full h-full"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+
           <p className="text-lg text-pryColor-Light mb-8">
             Empowering individuals with unparalleled opportunities through:
           </p>
