@@ -22,14 +22,14 @@ const Header = () => {
                 KOGI MSME Registeration
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="https://kogikeda.ng/events/form.php"
                 className="hover:text-[#8E44AD]"
               >
                 Register
               </a>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>

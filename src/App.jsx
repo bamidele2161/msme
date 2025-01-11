@@ -11,6 +11,7 @@ import image5 from "./assets/per5.jpg";
 import gov from "./assets/gov.jpg";
 import video from "./assets/talent.mp4";
 import main from "./assets/main.mp4";
+import cacImage from "./assets/cac.jpg";
 const KogiMSMEConference = () => {
   return (
     <div className="bg-gray-50 text-gray-900 min-h-screen">
@@ -76,7 +77,8 @@ const KogiMSMEConference = () => {
                 src: image1,
                 alt: "Event Image 2",
                 position: "Father of the day",
-                title: "Former Governor - His Excellency, Alhaji Yahaya Bello",
+                title:
+                  "Former Governor - His Excellency, Alh. Yahaya Adoza Bello",
               },
             ].map((item, index) => (
               <div
@@ -172,7 +174,7 @@ const KogiMSMEConference = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <div className="bg-secColor-Lighter py-6 px-4 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-pryColor mb-2">
-                🎯 Talent Haunt
+                🎯 Talent Hunt
               </h3>
               <p className="text-gray-700">
                 Unveiling hidden talents within communities and fostering
@@ -214,6 +216,29 @@ const KogiMSMEConference = () => {
       </section>
       <main className="container mx-auto px-4 py-12">
         <WhyAttend />
+        <section className="py-16 bg-secColor-Lighter text-center">
+          <div className="container mx-auto px-6 md:px-20">
+            <h2 className="text-3xl md:text-4xl font-bold text-pryColor mb-6">
+              Register Your Business with CAC
+            </h2>
+            <p className="text-lg text-gray-700 mb-8">
+              Take your business to the next level by registering with the
+              Corporate Affairs Commission (CAC). Get recognized and access new
+              opportunities!
+            </p>
+            <img
+              src={cacImage}
+              alt="Register CAC"
+              className="w-full max-w-md mx-auto mb-6"
+            />
+            <a
+              href="https://www.ecosystem.ng/register"
+              className="bg-pryColor hover:bg-[#2C3E50] text-white py-3 px-6 rounded-lg shadow-lg font-semibold text-lg"
+            >
+              Register Your Business Now
+            </a>
+          </div>
+        </section>
 
         <section className="bg-secColor text-white py-16 px-8 rounded-lg shadow-md">
           <div className="container mx-auto text-center">
