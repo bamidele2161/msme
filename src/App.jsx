@@ -41,16 +41,10 @@ const KogiMSMEConference = () => {
         </section>
 
         <section className="w-full px-6 md:px-10 text-center">
-          <p className="text-base md:text-lg text-[#FBF7FB] mb-4">
+          <p className="text-base md:text-2xl text-[#FBF7FB] mb-4">
             Don't miss the opportunity to empower your business and network with
             industry leaders. Join us in shaping a prosperous future!
           </p>
-          <a
-            className="bg-pryColor hover:bg-[#2C3E50] text-white py-3 px-6 rounded-lg shadow-lg font-semibold text-sm md:text-lg"
-            href="https://kogikeda.ng/events/form.php"
-          >
-            MSME Conference Registration Here
-          </a>
         </section>
       </div>
 
@@ -251,13 +245,6 @@ const KogiMSMEConference = () => {
               incredible opportunities, gain access to financial tools, and make
               lasting impacts in your community.
             </p>
-
-            <a
-              className="bg-pryColor hover:bg-secColor-Light text-white py-3 px-10 rounded-lg  shadow-lg text-lg font-semibold transition-transform transform hover:scale-105"
-              href="https://kogikeda.ng/events/form.php"
-            >
-              Register Now
-            </a>
           </div>
         </section>
 
