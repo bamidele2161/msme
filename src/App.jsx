@@ -239,7 +239,7 @@ const KogiMSMEConference = () => {
             </p>
             <a
               href="https://www.ecosystem.ng/register"
-              className="bg-pryColor hover:bg-[#2C3E50] text-white py-3 px-6 rounded-lg shadow-lg font-semibold text-lg"
+              className="bg-pryColor hover:bg-[#2C3E50] text-white py-3 px-6 rounded-lg shadow-lg font-semibold text-xs md:text-lg"
             >
               Register Your Business Now
             </a>
