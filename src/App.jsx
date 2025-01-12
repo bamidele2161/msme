@@ -216,21 +216,27 @@ const KogiMSMEConference = () => {
       </section>
       <main className="container mx-auto px-4 py-12">
         <WhyAttend />
-        <section className="py-16 bg-secColor-Lighter text-center">
+
+        <section className="py-16 bg-gray-50 text-center">
           <div className="container mx-auto px-6 md:px-20">
             <h2 className="text-3xl md:text-4xl font-bold text-pryColor mb-6">
-              Register Your Business with CAC
+              GET YOUR FREE CAC CERTIFICATE
             </h2>
             <p className="text-lg text-gray-700 mb-8">
-              Take your business to the next level by registering with the
-              Corporate Affairs Commission (CAC). Get recognized and access new
-              opportunities!
+              CAC registration is fully paid for by His Excellency Alh Ahmed
+              Usman Ododo. Take advantage of this opportunity!
             </p>
             <img
               src={cacImage}
               alt="Register CAC"
               className="w-full max-w-md mx-auto mb-6"
             />
+            <p className="text-lg text-gray-700 mb-6">
+              Send your MSME REG NUMBER to WhatsApp:
+            </p>
+            <p className="text-[#2C3E50] pb-3 px-6 font-semibold text-lg">
+              +2348034839511
+            </p>
             <a
               href="https://www.ecosystem.ng/register"
               className="bg-pryColor hover:bg-[#2C3E50] text-white py-3 px-6 rounded-lg shadow-lg font-semibold text-lg"
