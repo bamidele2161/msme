@@ -19,7 +19,7 @@ const Header = () => {
                 href="https://www.ecosystem.ng/register"
                 className="hover:text-[#8E44AD]"
               >
-                KOGI MSME Registeration
+                KOGI MSME Registration
               </a>
             </li>
             {/* <li>
